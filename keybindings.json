@@ -1,0 +1,18 @@
+ [
+     {
+      "key": "ctrl+shift+m",
+      "command": "editor.action.insertSnippet",
+      "when": "editorTextFocus",
+      "args": {
+        "name": "Math inline mode"
+      }
+  },
+  {
+    "key": "ctrl+alt+m",
+    "command": "editor.action.insertSnippet",
+    "when": "editorTextFocus",
+    "args": {
+      "name": "Math outline mode"
+    }
+}
+]

@@ -1,0 +1,65 @@
+{
+	// Place your snippets for latex here. Each snippet is defined under a snippet name and has a prefix, body and 
+	// description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
+	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. Placeholders with the 
+	// same ids are connected.
+	// Example:
+	"Print to console": {
+		"prefix": "log",
+		"body": [
+			"console.log('$1');",
+			"$2"
+		],
+		"description": "Log output to console"
+	},
+	"Math inline mode": {
+		"prefix": "ma",
+		"body": [
+			"\\( ${TM_SELECTED_TEXT}$1 \\)",
+		],
+	},
+	"Math outline mode": {
+		"prefix": "Ma",
+		"body": [
+			"\n \\[ ${TM_SELECTED_TEXT}$1 \\]\n",
+		],
+	},
+	"Box": {
+		"prefix": "box",
+		"body": [
+			" \n \\fbox{$1} \n ",
+		],
+	},
+	"Image": {
+		"prefix": "img",
+		"body": [
+			"\\includegraphics{width=$1\\linewidth}{pic$2.png}",
+		],
+	},
+	"Minipage": {
+		"prefix": "col",
+		"body": [
+			"\\begin{minipage}{0.5\\linewidth}",
+			"\t $1",
+			"\\end{minipage}\n"
+		],
+	},
+	"Sqrt": {
+		"prefix": "@q",
+		"body": [
+			"\\sqrt{$1}",
+		],
+	},
+	"Summa": {
+		"prefix": "sum",
+		"body": [
+			"\\sum_{$1=$2}^{$3}$4",
+		],
+	},
+	"Math mode inlineee": {
+		"prefix": "math",
+		"body": [
+			"$ ${TM_SELECTED_TEXT} $"
+		]
+	}
+}
