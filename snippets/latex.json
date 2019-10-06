@@ -39,8 +39,8 @@
 	"Minipage": {
 		"prefix": "col",
 		"body": [
-			"\\begin{minipage}{0.5\\linewidth}",
-			"\t $1",
+			"\\begin{minipage}{0.45$1\\linewidth}",
+			"\t $2",
 			"\\end{minipage}\n"
 		],
 	},
@@ -56,10 +56,27 @@
 			"\\sum_{$1=$2}^{$3}$4",
 		],
 	},
-	"Math mode inlineee": {
-		"prefix": "math",
+	"Environment": {
+		"prefix": "beg",
 		"body": [
-			"$ ${TM_SELECTED_TEXT} $"
+			"\\begin{$1}",
+			"\t $2", 
+			"\\end{$1}\n"
 		]
-	}
+	}, 
+	"Figure": {
+		"prefix": "fig",
+		"body": [
+			"\\begin{figure}[h]",
+			"\t\\center{\\includegraphics{width=1$1\\linewidth}{pic$2.png}}",
+			"\t\\caption{$3}",
+			"\\end{figure}"
+		]
+	}, 
+	"Statement": {
+		"prefix": "statement",
+		"body": [
+			"\\textbf{\\underline{$1}}"
+		]
+	}, 
 }
