@@ -1,0 +1,16 @@
+{
+    "latex-workshop.view.pdf.viewer": "tab",
+    "window.zoomLevel": -1,
+    "editor.suggest.snippetsPreventQuickSuggestions": false,
+    "latex-workshop.view.pdf.hand": true,
+    "workbench.list.horizontalScrolling": true,
+    "workbench.editor.closeOnFileDelete": true,
+    "workbench.editor.highlightModifiedTabs": true,
+    "macros": {
+        "latex.buildAndUpdate": [
+            "latex-workshop.saveWithoutBuilding",
+            "latex-workshop.build",
+            "latex-workshop.refresh-viewer"
+        ]
+    }
+}

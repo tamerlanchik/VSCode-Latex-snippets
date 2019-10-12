@@ -14,5 +14,19 @@
     "args": {
       "name": "Math outline mode"
     }
-}
+  },
+  {
+    "key": "alt+u",
+    "command": "editor.action.insertSnippet",
+    "when": "editorTextFocus",
+    "args": {
+       "command": "deleteWordLeft",
+      "name": "Updashed"
+    }
+  },
+  {
+    "key": "alt+w",
+    // "command": "latex-workshop.refresh-viewer",
+    "command": "macros.latex.buildAndUpdate"
+  }
 ]

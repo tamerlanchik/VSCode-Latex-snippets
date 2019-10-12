@@ -33,7 +33,7 @@
 	"Image": {
 		"prefix": "img",
 		"body": [
-			"\\includegraphics{width=$1\\linewidth}{pic$2.png}",
+			"\\includegraphics[width=$1\\linewidth]{pic$2.png}",
 		],
 	},
 	"Minipage": {
@@ -68,7 +68,7 @@
 		"prefix": "fig",
 		"body": [
 			"\\begin{figure}[h]",
-			"\t\\center{\\includegraphics{width=1$1\\linewidth}{pic$2.png}}",
+			"\t\\center{\\includegraphics[width=1$1\\linewidth]{pic$2.png}}",
 			"\t\\caption{$3}",
 			"\\end{figure}"
 		]
@@ -79,4 +79,27 @@
 			"\\textbf{\\underline{$1}}"
 		]
 	}, 
+
+	"Updashed": {
+		"prefix": "updash",
+		"body": [
+			"\\overline{$TM_CURRENT_WORD}"
+		]
+	},
+	"Vertical vector with circle braces": {
+		"prefix": "vvc",
+		"body": [
+			"\\begin{pmatrix}${TM_SELECTED_TEXT}$1\\end{pmatrix}"
+		]
+	},
+	"Vertical vector with square braces": {
+		"prefix": "vvs",
+		"body": [
+			"\\begin{bmatrix}${TM_SELECTED_TEXT}$1\\end{bmatrix}"
+		]
+	},
+	"Widetilde": {
+		"prefix":"wt",
+		"body": "\\widetilde{$1}"
+	}
 }
