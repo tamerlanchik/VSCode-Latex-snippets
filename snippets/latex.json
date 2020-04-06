@@ -101,5 +101,9 @@
 	"Widetilde": {
 		"prefix":"wt",
 		"body": "\\widetilde{$1}"
+	},
+	"Variable": {
+		"prefix":"var",
+		"body": "¿$1¡$2"
 	}
 }
