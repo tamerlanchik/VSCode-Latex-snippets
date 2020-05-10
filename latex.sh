@@ -9,4 +9,5 @@ base=${workdir}/${filename}
 echo "Got: ${base}, proj: ${projectDir}"
 python3 ${projectDir}/scripts/expand.py ${base}.tex ${base}.gen.tex ${base}.json
 pdflatex ${base}.gen.tex -output-directory ${workdir}
+rm ${base}.gen.aux
 mv ${base}.gen.pdf ${base}.pdf
